@@ -5,8 +5,8 @@ import { Button, buttonVariants } from "@/components/ui/button"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex max-w-[980px] flex-col items-start gap-2">
+    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 border border-foreground">
+      <div className="flex flex-wrap max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
           Beautifully designed components <br className="hidden sm:inline" />
           built with Radix UI and Tailwind CSS.
@@ -16,7 +16,7 @@ export default function IndexPage() {
           into your apps. Free. Open Source. And Next.js 13 Ready.
         </p>
       </div>
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row md:flex-wrap gap-4">
         <Link
           href={siteConfig.links.docs}
           target="_blank"
